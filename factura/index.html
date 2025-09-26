@@ -1,0 +1,458 @@
+<html lang="en">
+<head>
+  <title>Construcciones Viondi - Facturación</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style rel="stylesheet" type="text/css" media="print">
+      body{
+          background-color: #fff;
+		  -webkit-print-color-adjust:exact;
+      }
+      h2{
+          color: white;
+          width: 100%;
+          text-alignn: left;
+          font-weight: 700;
+          font-size: 1.5rem;
+          font-family: 'Open Sans', sans-serif;
+      }
+      h4{
+          color:white;
+          font-size: 1rem;
+          width:100%;
+      }
+      table{
+          font-size: 0.7rem;
+      }
+</style>
+
+  <style>
+      body{
+          background-color: #fffff;
+      }
+	  button{
+		  color:white;
+		  background-color: #545b62;
+		  border-radius:5px;
+	  }
+      h2{
+          color: white;
+		  background-color:#b33b24;
+          text-alignn: left;
+          font-weight: 700;
+          font-size: 2rem;
+          font-family: 'Open Sans', sans-serif;
+      }
+      h4{
+          color:white;
+          font-size: 1.5rem;
+      }
+      h3{
+          color:black;
+          font-size: 80%;
+          width:100%;
+      }
+      table{
+          font-size: 1.5rem;
+      }
+	  div .form-row{
+		  padding-bottom:4%;
+		  padding-top:4%;
+	  }
+  </style>
+
+</head>
+<body>
+    
+<div id="formulario">
+
+    <div style="width:100%;background-color: #b33b24;height: 133px;">
+        <div class="row md-12" style="width:100%">
+            <div class="col-sm-1" style="width: 30%;">
+			</div>
+            <div class="col-sm-2" style="width: 30%;text-alignn: center;"> 
+				<img class="logo" src="https://www.construccionesviondi.com.ar/images/logo.png" alt="">
+			</div>
+            <div class="col-sm-6" style="text-alignn: left;">
+				<BR>
+                <h2 class="inline" style="margin-top: 15px;text-alignn:left;">ARMADO DE PRESUPUESTO</h2>
+            </div>
+			
+        </div>
+    </div>
+	
+	<br><br>
+	<div class="container">
+		<form>
+			<h4 style="color:#b33b24"> Datos de la factura</h4>
+			  <div class="form-row">
+				<div class="form-group col-md-3">
+				  <label for="inputEmail4">Cliente</label>
+				  <input type="text" class="form-control" id="clienteX" placeholder="Cliente">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Fecha</label>
+				  <input type="datetime" class="form-control" id="fechaX" placeholder="Fecha">
+				</div>
+				<div class="form-group col-md-3">
+				  <label for="vehiculoX">¿Incluye Materiales?</label>
+				  <select id="vehiculoX" class="form-control">
+					<option selected>Si</option>
+					<option>No</option>
+				  </select>
+				</div>
+				<div class="form-group col-md-3">
+				  <label for="inputPassword4">Obra</label>
+				  <input type="datetime" class="form-control" id="marcaX" placeholder="Ubicacion obra">
+				</div>
+			  </div>
+			  <br><br><br>
+			  
+			<h4 style="color:#b33b24">Lista de trabajos y materiales</h4>
+			  <div class="form-row">
+				<div class="form-group col-md-7">
+				  <label for="inputEmail4"><b>Elemento 1</b></label>
+				  <input type="text" class="form-control" id="1eX" placeholder="descripción...">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Cantidad</label>
+				  <input type="number" class="form-control" id="1cX" placeholder="opcional">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Precio</label>
+				  <input type="number" class="form-control" id="1pX" placeholder="opcional">
+				</div>
+			  </div>
+			  <div class="form-row">
+				<div class="form-group col-md-7">
+				  <label for="inputEmail4"><b>Elemento 2</b></label>
+				  <input type="text" class="form-control" id="2eX" placeholder="descripción...">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Cantidad</label>
+				  <input type="datetime" class="form-control" id="2cX" placeholder="opcional">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Precio</label>
+				  <input type="number" class="form-control" id="2pX" placeholder="opcional">
+				</div>
+			  </div>
+			  <div class="form-row">
+				<div class="form-group col-md-7">
+				  <label for="inputEmail4"><b>Elemento 3</b></label>
+				  <input type="text" class="form-control" id="3eX" placeholder="descripción...">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Cantidad</label>
+				  <input type="datetime" class="form-control" id="3cX" placeholder="opcional">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Precio</label>
+				  <input type="number" class="form-control" id="3pX" placeholder="opcional">
+				</div>
+			  </div>
+			  <div class="form-row">
+				<div class="form-group col-md-7">
+				  <label for="inputEmail4"><b>Elemento 4</b></label>
+				  <input type="text" class="form-control" id="4eX" placeholder="descripción...">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Cantidad</label>
+				  <input type="datetime" class="form-control" id="4cX" placeholder="opcional">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Precio</label>
+				  <input type="number" class="form-control" id="4pX" placeholder="opcional">
+				</div>
+			  </div>
+			  <div class="form-row">
+				<div class="form-group col-md-7">
+				  <label for="inputEmail4"><b>Elemento 5</b></label>
+				  <input type="text" class="form-control" id="5eX" placeholder="descripción...">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Cantidad</label>
+				  <input type="datetime" class="form-control" id="5cX" placeholder="opcional">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Precio</label>
+				  <input type="number" class="form-control" id="5pX" placeholder="opcional">
+				</div>
+			  </div>
+			  <div id="agregarmas" class="collapse">
+			  <div class="form-row">
+				<div class="form-group col-md-7">
+				  <label for="inputEmail4"><b>Elemento 6</b></label>
+				  <input type="text" class="form-control" id="6eX" placeholder="descripción...">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Cantidad</label>
+				  <input type="datetime" class="form-control" id="6cX" placeholder="opcional">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Precio</label>
+				  <input type="number" class="form-control" id="6pX" placeholder="opcional">
+				</div>
+			  </div>
+			  <div class="form-row">
+				<div class="form-group col-md-7">
+				  <label for="inputEmail4"><b>Elemento 7</b></label>
+				  <input type="text" class="form-control" id="7eX" placeholder="descripción...">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Cantidad</label>
+				  <input type="datetime" class="form-control" id="7cX" placeholder="opcional">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Precio</label>
+				  <input type="number" class="form-control" id="7pX" placeholder="opcional">
+				</div>
+			  </div>
+			  <div class="form-row">
+				<div class="form-group col-md-7">
+				  <label for="inputEmail4"><b>Elemento 8</b></label>
+				  <input type="text" class="form-control" id="8eX" placeholder="descripción...">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Cantidad</label>
+				  <input type="datetime" class="form-control" id="8cX" placeholder="opcional">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Precio</label>
+				  <input type="number" class="form-control" id="8pX" placeholder="opcional">
+				</div>
+			  </div>
+			  <div class="form-row">
+				<div class="form-group col-md-7">
+				  <label for="inputEmail4"><b>Elemento 9</b></label>
+				  <input type="text" class="form-control" id="9eX" placeholder="descripción...">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Cantidad</label>
+				  <input type="datetime" class="form-control" id="9cX" placeholder="opcional">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Precio</label>
+				  <input type="number" class="form-control" id="9pX" placeholder="opcional">
+				</div>
+			  </div>
+			  <div class="form-row">
+				<div class="form-group col-md-7">
+				  <label for="inputEmail4"><b>Elemento 10</b></label>
+				  <input type="text" class="form-control" id="10eX" placeholder="descripción...">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Cantidad</label>
+				  <input type="datetime" class="form-control" id="10cX" placeholder="opcional">
+				</div>
+				<div class="form-group col-md-2">
+				  <label for="inputPassword4">Precio</label>
+				  <input type="number" class="form-control" id="10pX" placeholder="opcional">
+				</div>
+			  </div>
+			  </div>
+			  <button type="button" class="" data-toggle="collapse" data-target="#agregarmas"><b>+</b> Agregar más / Esconder</button>
+			  <div class="form-row">
+				<div class="form-group col-md-7">
+				</div>
+				<div class="form-group col-md-4">
+				  <input type="number" class="form-control" id="totalX" placeholder="Total $">
+				  <button type="button" style="color:white;background-color:#b33b24" class="btn btn-primary btn-block" id="calcular">Calcular Total</button>
+				</div>
+			  </div>
+			  <br><br>
+			  
+		
+			  
+			  
+			<h4 style="color:#b33b24">Detalles</h4>
+			<div class="form-row">
+			  <div class="form-group col-md-11">
+				<textarea rows="3" class="form-control" id="detallesX" placeholder="Información adicional..."></textarea>
+			  </div>
+			</div>
+		</form> 
+	</div>		
+		
+<button type="button" style="color:white;background-color:#b33b24" class="btn btn-primary btn-block" id="mostrar">GENERAR<BR>FACTURA</button>
+			 
+</div>
+
+<div id="boleta">
+    <div style="width:100%;background-color: #b33b24;height: 150px;">
+        <div class="row md-12" style="width:100%">
+            <div class="col-sm-2" id="print2" style="width: 30%;">
+				<button id="print" style="width:200px;border-radius:5px;margin-left:12px;margin-top:10px;"><h3 style="color:white">Imprimir Factura</h3></button>
+            </div>
+            <div class="col-sm-2" style="width: 30%;text-alignn: center;"> 
+				<img class="logo" style="margin-top:5px" src="https://www.construccionesviondi.com.ar/images/logo.png" alt="">
+			</div>
+            <div class="col" style="text-alignn: center;">
+				<br>
+                <h2 class="inline" style="text-alignn:CENTER;margin-top:15px;font-size:1.6rem"><i class='fas fa-hard-hat' style='font-size:28px'></i> PRESUPUESTO DE CONSTRUCCION</h2>
+                <b class="inline" style="background-color:#ffd315" > 2262 549368 - construccionesviondi@yahoo.com</b>
+             </div>
+            <div class="col-sm-3" id="print2" style="width: 30%;">
+			    <button id="modificar" style="width:200px;border-radius:5px;margin-left:32px;margin-top:10px;"><h3 style="color:white">Modificar Factura</h3></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="card text-center" style="font-size: 1.5rem;background-color:#ffd315">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-3"><b>Fecha:</b> <p id="fechaY"><p></div>
+                <div class="col-sm-3"><b>Cliente</b>: <p id="clienteY"><p></div>
+                <div class="col-sm-3"><b >Incluye Materiales</b>:<p id="vehiculoY"></p></div>
+                <div class="col-sm-3"><b>Obra</b>: <p id="marcaY"><p></div>
+            </div>
+        </div>
+    </div>  
+
+
+
+
+<div style="background-color: #eeeeee;">
+
+
+
+
+
+    <div class="container" style="">
+    <div class="container" style="border-radius: 15px;">
+        <p></p>  
+     
+	<br><br>
+	 
+        <table class="table" style="background-color: #f9f9f9; border-radius: 10px;text-alignn: ;">
+          <thead>
+            <tr style="background-color: white;">
+              <th>Item</th>
+              <th style="text-align:center">Cantidad</th>
+              <th style="text-align:right">Precio</th>
+            </tr>
+          </thead>
+          <tbody style="text-alignn: left;">
+            <tr>
+                <td id="1eY"></td>
+                <td id="1cY" style="text-align:center"></td>
+                <td id="1pY" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td id="2eY"></td>
+                <td id="2cY" style="text-align:center"></td>
+                <td id="2pY" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td id="3eY"></td>
+                <td id="3cY" style="text-align:center"></td>
+                <td id="3pY" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td id="4eY"></td>
+                <td id="4cY" style="text-align:center"></td>
+                <td id="4pY" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td id="5eY"></td>
+                <td id="5cY" style="text-align:center"></td>
+                <td id="5pY" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td id="6eY"></td>
+                <td id="6cY" style="text-align:center"></td>
+                <td id="6pY" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td id="7eY"></td>
+                <td id="7cY" style="text-align:center"></td>
+                <td id="7pY" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td id="8eY"></td>
+                <td id="8cY" style="text-align:center"></td>
+                <td id="8pY" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td id="9eY"></td>
+                <td id="9cY" style="text-align:center"></td>
+                <td id="9pY" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td id="10eY"></td>
+                <td id="10cY" style="text-align:center"></td>
+                <td id="10pY" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td id="11eY"></td>
+                <td id="11cY" style="text-align:center"></td>
+                <td id="11pY" style="text-align:right"></td>
+            </tr>
+            <tr>
+                <td id="12eY"></td>
+                <td id="12cY" style="text-align:center"></td>
+                <td id="12pY" style="text-align:right"></td>
+            </tr>
+            <tr style="background-color: white;">
+                <td><b>Total:</b></td>
+                <td></td>
+                <td style="text-align:right"><b>$</b><b id="totalY"></b></td>
+            </tr>
+          </tbody>
+		</table>
+		<br><br>
+      </div>
+    </div>
+
+
+ 
+	<br><br><br>
+	  
+    <div class="container">
+    <div class="card text-left" style="">
+        <div class="card-body">
+          <h4 class="card-title" style="color:black;">Detalles</h4>
+		  
+          <div class="container"><p class="card-text" style="font-size: 1.5rem;text-alignn: justify;padding-right:15px" id="detallesY"></p></div>
+        
+		</div>
+      </div>  
+    </div>
+
+	</br>
+	<br><br>
+</div>		
+
+		
+</div>
+	<div style="width:100%;background-color: #fff;height: 15px;">
+	</div>
+	
+    <div class="card text-center" style="">
+        <div class="card-body">		
+        	<h4 style="text-alignn:center;color:black;"><b>Tel:</b> <a href="tel:2262594035">2262-549368</a> - <b>Web:</b><a href="https://www.construccionesviondi.com.ar/">https://www.construccionesviondi.com.ar/</a></h4>
+		</div> 
+	</div>	
+	
+	
+	
+
+
+	
+      </body>
+	  
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	  <script type="text/javascript" src="./body.js"></script>
+	  
+      </html>
+      
